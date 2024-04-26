@@ -1,0 +1,35 @@
+.gpt3__brand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem; /* section padding */
+  }
+  
+  .gpt3__brand div {
+    display: flex;
+    gap: 2rem; /* Space between the brand logos */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+  }
+  
+  .gpt3__brand img {
+    width: 100px; /* Default size for brand logos */
+    height: auto;
+    transition: transform 0.2s; /* Animation for hover effects */
+  }
+  
+  .gpt3__brand img:hover {
+    transform: scale(1.1); /* Zoom in slightly on hover */
+  }
+  
+  /* Responsive behavior for smaller screens */
+  @media (max-width: 320px) {
+    .gpt3__brand div {
+      flex-direction: column; /* Stack vertically for smaller screens */
+      gap: 1rem; /* Reduce space between the brand logos */
+    }
+  
+    .gpt3__brand img {
+      width: 80px; /* Adjust size for smaller screens */
+    }
+  }
+  
